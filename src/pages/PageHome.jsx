@@ -7,7 +7,7 @@ import F06TodayOnly from "../components/F06TodayOnly";
 import F07Category from "../components/F07Category";
 import F08Special from "../components/F08Special";
 import F09Bestselling from "../components/F09Bestselling";
-import F10Recommendation from "../components/F10recommendation";
+import F10Recommendation from "../components/F10Recommendation";
 import F11Footer from "../components/F11Footer";
 
 export default function PageHome() {
