@@ -1,0 +1,92 @@
+.carousel-container {
+    display: flex;
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #supermarket-slide1:checked ~ div > .carousel-container { transform: translateX(0%); }
+  #supermarket-slide2:checked ~ div > .carousel-container { transform: translateX(-50%); }
+
+  .slide {
+    width: 180%;
+    flex-shrink: 0;
+  }
+  .category-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    padding-right: 2050px;
+  }
+  .category-list li {
+    width: 195px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .category-list a{
+    text-decoration: none;
+    text-align: left;
+  }
+  .category-list img {
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .category-list p {
+    text-align: left;
+    color: black;
+    margin-bottom: 5px;
+  }
+  .category-list button {
+    background-color: white;
+    padding: 10px 40px;
+    margin-top: 30px;
+    text-align: left;
+    color: red;
+    border-radius: 20px;
+    border-color: red;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+    margin-top: -30px;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  #supermarket-slide1:checked ~ .carousel-controls .prev {
+    background-color: rgba(200, 200, 200, 0.8);
+    color: white;
+  }
+  #supermarket-slide1:checked ~ .carousel-controls .next {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+
+  #supermarket-slide2:checked ~ .carousel-controls .prev {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  #supermarket-slide2:checked ~ .carousel-controls .next {
+    background-color: rgba(200, 200, 200, 0.8);
+    color: white;
+  }
